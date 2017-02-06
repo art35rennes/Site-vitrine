@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="Home">
+    <meta name="keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+    <meta name="news_keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+    
+    <meta name="description" content="Transport My Mind est une entreprise française créée en 2010. Les produits présent dans le catalogue sont des modèles de transports futuristes.">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/global.css">
+    <script type="text/javascript">
+        var nbMax = 5;
+
+        function Boucle(num) { //Fonction qui permet de boucler par rapport a au nombre d'images disponible par produit
+            if (num > nbMax) {
+                num = 1;
+            }
+            if (num < 1) {
+                num = nbMax;
+            }
+            return num.toString();
+        }
+
+        function Carrousel(Sens) { //Fonction gere le changement d'image
+            var Src = document.getElementById("carrousel").src; //recuperation de l'image courante
+            document.getElementById("carrousel").src = "../../Images/Carrousel/carrousel_" + Boucle(Math.floor(Src.split("carrousel_")[1].split(".")[0]) + Sens).toString() + ".png"; //On change la source de l'image
+        }
+    </script>
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+        var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/aclonica:n4:default;amaranth:n4:default;ubuntu-condensed:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div>
+        <img id="carrousel" alt="image citation de Transport my mind" src="../../Images/Carrousel/carrousel_1.png" width="100%" />
+        <div id="ButtonCarrouselle">
+            <input type="button" class="skip FloatR" onClick="Carrousel(1)" value="Next" />
+            <input type="button" class="skip FloatR" onClick="Carrousel(-1)" value="Previous" />
+        </div>
+    </div>
+    <article><img id="Article_1" class="ImgArticleL" src="../../Images/news.jpg" alt="journaux" />
+        <p><h3>Sign up the newsletter to be the informed first one !</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By seizing your e-mail address, you will always be informed about last novelties and promotions of Transport My Mind. You can receive all the information concerning lounges in the world.</p>
+    </article>
+
+    <article><img id="Article_2" class="ImgArticleR" src="../../Images/Logo/LogoTransportMyMind.png" height="200" alt="logo transport my mind" />
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport My Mind is a French company created in 2010. Products present in the catalog one conceived by Transport My Mind and their partners  : Kawasaki, BMW, Google et Intel.</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The site was created by a company private E.R.A.S, and is accommodated by the same company. We thank Arthur Sicard and Estelle Roué for their investment in the creation of the site and in the maintenance of this one.</p>
+    </article>
+
+</body>
+
+</html>

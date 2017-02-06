@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+    <meta name="news_keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+    
+    <meta name="description" content="Transport My Mind est une entreprise française créée en 2010. Les produits présent dans le catalogue sont des modèles de transports futuristes.">
+    <link rel="stylesheet" type="text/css" href="Files/CSS/global.css">
+    <link rel="icon" type="image/png" href="Files/Images/Logo/LogoTransportMyMind.png" />
+    <title>Transport My Mind</title>
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+        var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/aclonica:n4:default;amaranth:n4:default;ubuntu-condensed:n4:default.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="Header">
+            <img src="Files/Images/Logo/LogoTransportMyMind.png" alt="Logo" class="HeaderImg Logo" />
+            <h1 class="inline Titre">Transport My Mind</h1>
+
+            <div class="inline" id="Drapeau">
+                <img src="Files/Images/drapeaux/Drap_fr.png" alt="drapeau français" id="DrapFR" class="HeaderImg Drap" onClick="window.open('index-fr.html', '_parent')" />
+                <img src="Files/Images/drapeaux/Drap_eng.png" alt="drapeau anglais" id="DrapENG" class="HeaderImg DrapC Drap" onClick="window.open('index-eng.html', '_parent')" />
+            </div>
+            <div class="contact" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Contact.html'; document.getElementById('Corps').style.height = '400px'; LockMenu(5)" onmouseover="Hover(1, 'BContact')" onmouseout="Hover(0,'BContact')" id="BContact">Contact</div>
+        </div>
+        <div id="DivMenu">
+            <div class="inline ButtonMenu" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Accueil-eng.html'; document.getElementById('Corps').style.height = '1300px'; LockMenu(0)" onmouseover="Hover(1, 'BAcceueil')" onmouseout="Hover(0,'BAcceueil')" id="BAcceueil">Home</div>
+            <div class="inline ButtonMenu" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Catalogue.html'; document.getElementById('Corps').style.height = '1300px'; LockMenu(1)" onmouseover="Hover(1, 'BCatalogue')" onmouseout="Hover(0,'BCatalogue')" id="BCatalogue">Catalog</div>
+            <div class="inline ButtonMenu" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Info.html'; document.getElementById('Corps').style.height = '2400px'; LockMenu(2)" onmouseover="Hover(1, 'BHist')" onmouseout="Hover(0,'BHist')" id="BHist">Who&nbsp;we&nbsp;are</div>
+            <div class="inline ButtonMenu" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Actu.html'; document.getElementById('Corps').style.height = '2500px'; LockMenu(3)" onmouseover="Hover(1, 'BActu')" onmouseout="Hover(0,'BActu')" id="BActu">News</div>
+            <div class="inline ButtonMenu" onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Newsletter.html'; document.getElementById('Corps').style.height = '400px'; LockMenu(4)" onmouseover="Hover(1, 'BNew')" onmouseout="Hover(0,'BNew')" id="BNew">Newsletter</div>
+        </div>
+        <script type="text/javascript">
+            var color;
+            document.getElementById("DrapENG").style.border = "solid 2px #0F76C0";
+            function UnlockMenu() {
+                document.getElementById("BAcceueil").style.backgroundColor = "#2B292A";
+                document.getElementById("BActu").style.backgroundColor = "#2B292A";
+                document.getElementById("BCatalogue").style.backgroundColor = "#2B292A";
+                document.getElementById("BHist").style.backgroundColor = "#2B292A";
+                document.getElementById("BContact").style.backgroundColor = "white";
+                document.getElementById("BNew").style.backgroundColor = "#2B292A";
+            }
+
+            function LockMenu(cPage) {
+                UnlockMenu();
+                if (cPage == 0)
+                    document.getElementById("BAcceueil").style.backgroundColor = "#D4B428";
+                if (cPage == 1)
+                    document.getElementById("BCatalogue").style.backgroundColor = "#D4B428";
+                if (cPage == 2)
+                    document.getElementById("BHist").style.backgroundColor = "#D4B428";
+                if (cPage == 3)
+                    document.getElementById("BActu").style.backgroundColor = "#D4B428";
+                if (cPage == 4)
+                    document.getElementById("BNew").style.backgroundColor = "#D4B428";
+                if (cPage == 5)
+                    document.getElementById("BContact").style.backgroundColor = "#D4B428";
+                color = "#D4B428";
+            }
+            LockMenu(0);
+
+            function Hover(where, id) {
+                if (where) {
+                    color = document.getElementById(id).style.backgroundColor;
+                    document.getElementById(id).style.backgroundColor = "#0F76C0";
+
+                }
+                else {
+                    document.getElementById(id).style.backgroundColor = color; //"#2B292A"
+                }
+            }
+        </script>
+    </header>
+
+    <iframe id="Corps" src="Files/Pages/Main/Accueil-eng.html"></iframe>
+    <!--<script type="text/javascript">
+        function setHeight() {
+            var hauteur;
+            var monFrm = document.getElementById('Corps');
+            if (document.all) {
+                hauteur = monFrm.contentWindow.document.body.scrollHeight;
+            }
+            else {
+                hauteur = monFrm.contentWindow.document.body.offsetHeight;
+            }
+            monFrm.setAttribute("height", hauteur + 120);
+        }
+    </script>-->
+    <div id="HR"></div>
+
+    <footer>
+        <table class="pCenter">
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="pCenter">Pages</p>
+                        <ul>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Contact.html'; document.getElementById('Corps').style.height = '400px'; LockMenu(5)">Contact</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Accueil-eng.html'; document.getElementById('Corps').style.height = '1300px'; LockMenu(0)">Home</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Newsletter.html'; document.getElementById('Corps').style.height = '400px'; LockMenu(4)">Sign up to the newsletter</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Info.html'; document.getElementById('Corps').style.height = '2400px'; LockMenu(2)">Who we are</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Actu.html'; document.getElementById('Corps').style.height = '2500px'; LockMenu(3)">News</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Main/Catalogue.html';document.getElementById('Corps').style.height = '1300px'; LockMenu(1)">Catalog</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Produits/hyperloop.html'; document.getElementById('Corps').style.height = '1100px'; LockMenu(1)">Hyperloop</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Produits/j.html'; document.getElementById('Corps').style.height = '1100px'; LockMenu(1)">Moto J</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Produits/vision.html'; document.getElementById('Corps').style.height = '1100px'; LockMenu(1)">Next Vision BMW</a>
+                            </li>
+                            <li>
+                                <a onClick="document.getElementById('Corps').src = 'Files/Pages/Produits/wattbus.html'; document.getElementById('Corps').style.height = '1100px'; LockMenu(1)">Bus Watt System</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>Partnership</p>
+                        <div>
+                            <img class="partenaire" src="Files/Images/Logo/bmw.png" alt="logo bmw">
+                            <img class="partenaire" src="Files/Images/Logo/google.png" alt="logo google">
+                            <img class="partenaire" src="Files/Images/Logo/intel.png" alt="logo intel">
+                            <img class="partenaire" src="Files/Images/Logo/kawasaki.jpg" alt="logo kawasaki">
+                        </div>
+                    </td>
+                    <td>
+                        <p>Legal notice</p>
+                        <p>
+                            Editorial director : Michael Laconte,<br> Director of Transport My Mind, managing editor : Estelle Roué,<br> Director of E.R.A.S Transport My Mind 195 Quai Eric Tabarly 29200 BREST Cedex 2 France<br> Phone : +33(0)2 98 30 20
+                            10<br> Host : E.R.A.S 41 rue de la Paix du Corbeau 75000 PARIS, cedex 15 France<br> Phone : +33(0)1 45 46 45 46<br> The site is declared to the CNIL, and carries the numbers of authorizations : 2012997.<br>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+</body>
+
+</html>

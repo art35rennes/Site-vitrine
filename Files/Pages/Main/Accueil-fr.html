@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Accueil">
+    <meta name="keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+    <meta name="news_keywords" content="transport,futur,Kawasaki,BMW,Google,Intel">
+
+    <meta name="description" content="Transport My Mind est une entreprise française créée en 2010. Les produits présent dans le catalogue sont des modèles de transports futuristes.">
+
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/global.css">
+    <script type="text/javascript">
+        //parent.document.getElementById("Corps").height = document.getElementsByTagName("body").offsetHeight;
+        //console.log(parent.document.scrollMaxY + document.getElementsByTagName("body").offsetHeight);
+
+        var nbMax = 5;
+
+        function Boucle(num) { //Fonction qui permet de boucler par rapport a au nombre d'images disponible par produit
+            if (num > nbMax) {
+                num = 1;
+            }
+            if (num < 1) {
+                num = nbMax;
+            }
+            return num.toString();
+        }
+
+        function Carrousel(Sens) { //Fonction gere le changement d'image
+            var Src = document.getElementById("carrousel").src; //recuperation de l'image courante
+            document.getElementById("carrousel").src = "../../Images/Carrousel/carrousel_" + Boucle(Math.floor(Src.split("carrousel_")[1].split(".")[0]) + Sens).toString() + ".png"; //On change la source de l'image
+        }
+
+        /*window.addEventListener('message', function(event) {
+
+            // IMPORTANT: Check the origin of the data!
+            if (~event.origin.indexOf('index-fr.html')) {
+                // The data has been sent from your site
+
+                // The data sent with postMessage is stored in event.data
+                console.log(event.data);
+            }
+            else {
+                // The data hasn't been sent from your site!
+                // Be careful! Do not use it.
+                return;
+            }
+        });*/
+    </script>
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+        var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/aclonica:n4:default;amaranth:n4:default;ubuntu-condensed:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div>
+        <img id="carrousel" alt="image citation transport my mind" src="../../Images/Carrousel/carrousel_1.png" width="100%" />
+        <div id="ButtonCarrouselle">
+            <input type="button" class="skip FloatR" onClick="Carrousel(1)" value="Suivant" />
+            <input type="button" class="skip FloatR" onClick="Carrousel(-1)" value="Précédent" />
+        </div>
+    </div>
+    <article><img id="Article_1" class="ImgArticleL" src="../../Images/news.jpg" alt="journaux" />
+        <p>
+            <h3>Inscrivez-vous à la newsletter pour être le premier informé !</h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En saisissant votre adresse e-mail, vous serez toujours informé(e) des dernières nouveautés et promotions de Transport My Mind. Vous pouvez recevoir toutes les informations concernant les salons
+            dans le monde. </p>
+    </article>
+
+    <article><img id="Article_2" class="ImgArticleR" src="../../Images/Logo/LogoTransportMyMind.png" height="200" alt="logo transport my mind" />
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport My Mind est une entreprise française créée en 2010. Les produits présent dans le catalogue ont été conçus par Transport My Mind et leurs partenaires : Kawasaki, BMW, Google et Intel.</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le site a été créé par une entreprise privé E.R.A.S, et est hébergé par cette même entreprise. Nous remercions Arthur Sicard et Estelle Roué pour leur investissement à la création du site et à la
+            maintenance de celui-ci.</p>
+    </article>
+</body>
+
+</html>

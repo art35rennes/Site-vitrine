@@ -1,0 +1,499 @@
+@charset "utf-8";
+
+/*CSS sur balise*/
+*{	/*Permet d'eviter que les elements sorte de l'ecran*/
+	max-width: 100%;
+}
+h2{
+	text-decoration: underline;
+	margin-top: -1%;
+}
+body{	/*applique la police d'ecriture a tous le site*/
+	font-family: ubuntu-condensed;
+	font-style: normal;
+	font-weight: 400;
+}
+
+table {
+	background: inherit;
+	width: 90%;
+}
+
+footer {
+	background-color: #0F6396;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+a:hover {	/*Souligne, met en gras et remplace le pointeur par une main lors du survole d'un lien*/
+	text-decoration: underline;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a:visited { /*fait que les lien visiter reste ecrit en blanc*/
+	color: white;
+}
+
+body {/*retire la marge par defaut ajouter par les navigateurs*/
+	margin: 0px;
+}
+
+td {
+	vertical-align: top;
+	width: 33%;
+}
+
+iframe {
+	width: 100%;
+	overflow-x: hidden;/*desactive les barres de scroll*/
+	overflow-y: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	overflow: hidden;
+	height: 1300px;
+}
+
+article {
+	width: 80%;
+	min-height: 200px;/*permet d'eviter que les images contenue sorte du contenere*/
+	border: groove;
+	border-color: black;
+	padding: 5px;
+	min-width: 300px;
+	max-width: 80%;
+	margin: 50px auto 3% auto;
+	font-size: 1.4em;
+	background-color: white;
+	border-radius: 8px;
+}
+
+fieldset {
+	width: 300px;
+	margin: 1% auto 1% auto;
+}
+
+input{
+	margin: 2px;
+}
+
+/*CSS sur class*/
+
+.ImgParas{
+	max-width:30%;
+	max-height: 300px;
+	display:inline;
+	float:left;
+	margin-right: 10px;
+	border: solid black 2px;
+	border-radius:5px;
+}
+
+.FloatR{
+	float: right;
+}
+
+.FloatL{
+	float: left;
+	max-height: 118px;
+	max-width: 200px;
+}
+
+.skip2{/*style des bouttons*/
+	-moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #0b0e07;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 4px 12px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.skip2:hover {/*style des bouttons d'un survol*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background: -moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color: #0688fa;
+}
+
+.skip {
+	-moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #0b0e07;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 4px 12px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.skip:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background: -moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: -ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color: #0688fa;
+}
+/*la principale difference entre skip et skip2 est la taille du boutton*/
+.BCarouCata{
+	width:100.8%;
+	background-color: grey;
+	padding: 3px;
+	min-height: 30px;
+	margin-left: -5px;
+}
+
+.ProduitCata{
+	display: inline-block;
+	width: 45%;
+	margin: 1%;
+	padding: 5px;
+	border:solid black;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+.ArticleActu {
+	width: 80%;
+	min-height: 200px;
+	border: none;
+	border-radius: 18px;
+	padding: 5px;
+	padding-right: 15px;
+	margin: 3% auto 3% auto;
+}
+
+.ActuDiv {
+	display: inline;
+	max-width: 50%;
+	font-size: 0.8em;
+	text-justify: auto;
+	margin-top: 15px;
+	padding: 8px;
+}
+
+.ActuImg {
+	max-height: 160px;
+	max-width: 300px;
+	margin: 3px;
+	margin-right: 2%;
+	float: left;
+	margin-top: 3%;
+}
+
+.partenaire {
+	max-height: 40px;
+}
+
+.Drap {
+	cursor: pointer;
+	height: 20px;
+}
+
+.BodyIframe {/*s'applique au body de certaine page contenue dans les iframes*/
+	padding: 5px;
+	padding-top: 15px;
+	text-align: center;
+	width: 40%;
+	border: solid 3px black;
+	background-color: grey;
+	margin: 5% auto 3% auto;
+	border-radius: 8px;
+}
+
+.inline {
+	display: inline;
+}
+
+.Titre {
+	display: inline-block;
+	font-size: 6.8vw;/*l'unite vw permet en resize en fonction de la largeur d'ecran*/
+	margin-top: -1.7vw;
+}
+
+.HeaderImg {
+	padding: 5px;
+}
+
+.Logo {
+	float: left;
+	height: 90px;
+}
+
+.contact {
+	font-size: 150%;
+	float: right;
+	margin-top: 50px;
+	margin-right: -82px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.ButtonMenu {
+	min-width: 20%;
+	padding: 0px 17px 16px 17px;
+	font-size: 30px;
+	margin: 0px 0.5% 0px 0.5%;
+	color: white;
+}
+
+.ButtonMenu:hover,
+.contact:hover {
+	
+	cursor: pointer;
+}
+
+.contact:hover {
+	color: white;
+	padding: 5px;
+}
+
+.FooterCol {
+	display: inline;
+	max-width: 20%;
+}
+
+.pCenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ImgArticleL {
+	float: left;
+	margin: 10px;
+	max-height: 140px;
+}
+
+.ImgArticleR {
+	float: right;
+	margin: 10px;
+	max-height: 140px;
+}
+
+.CarrouselCata{
+	width: 100%;
+	margin: auto;
+}
+
+.ImgAProd{
+	border-radius: 5px;
+}
+
+.TTh{
+	padding: 5px;
+	border: solid 1px black;
+	border-radius: 12px;
+	background-color: white;
+	margin: 5px;
+}
+
+.ImgTrombi{
+	max-height: 95px;
+	border-radius: 3px;
+}
+
+.linkPresse{/*annule le css sur la balise a*/
+	color: black;
+}
+
+.TTh2{
+	padding: 5px;
+	border: solid 1px black;
+	border-radius: 12px;
+	background-color: white;
+	margin: 5px;
+	text-align: left;
+}
+
+.center{
+	text-align: center;
+}
+
+/*CSS sur ID*/
+
+#TTrombi{
+	width: 70%;
+	margin: 3% auto 3% auto;
+	text-align: center;
+	padding: 5px;
+}
+
+#DrapC{
+	border-color: green;
+	border: solid 3px;
+}
+
+#ProdImg{
+	width: 90%;
+	border-radius: 8px;
+}
+
+#TextProd{
+	width: 85%;
+	border-radius: 8px;
+	padding: 2%;
+	margin: 2% auto 2% auto;
+	background-color: white;
+	min-height: 270px;
+}
+
+#DivProdImg{
+	text-align: center;
+	width: 100%;
+	padding-top: 4%;
+}
+
+#DivProd{
+	width: 90%;
+	border: solid 3px black;
+	border-radius: 8px;
+	margin: 2% auto 2% auto;
+	background-color: grey;
+}
+
+#DivCata{
+	margin:auto;
+	padding:3px;
+	width: 90%;
+	padding-left: 4%;
+	vertical-align: top;
+}
+
+#DivActu {
+	width: 80%;
+	margin: auto;
+	margin-top: 3%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: grey;
+	border: solid;
+	border-color: black;
+	border-radius: 12px;
+}
+
+#FooterC {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#FooterL {
+	float: left;
+	margin-left: 5%;
+}
+
+#FooterR {
+	float: right;
+	margin-right: 5%;
+}
+
+#Carrousel {
+	margin: 0px;
+	padding: 0px;
+}
+
+#ButtonCarrouselle {
+	float: right;
+	text-align: center;
+	background-color: #2B292A;
+	width: 100%;
+	height: 30px;
+	margin-top: -4px;
+	margin-bottom: 3%;
+}
+
+#Drapeau {
+	float: right;
+	margin-right: 10px;
+	padding-top: 15px;
+}
+
+#DivMenu {
+	text-align: center;
+	background-color: #2B292A;
+	min-height: 50px;
+	padding-bottom: 0px;
+}
+
+#Header {
+	width: 100%;
+	height: 95px;
+	text-align: center;
+}
+
+#HR {/*barre de separation footer iframe*/
+	background-color: gray;
+	height: 20px;
+}
+#DivImgInfo{
+	width: 100%;
+	text-align: center;
+}
+#ImgInfo{
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	width:91%;
+	border:solid black 2px;
+	border-radius: 8px;
+}
+
+#DivInfo{
+	margin:auto;
+	margin-top:3%;
+	padding:3%;
+	border: solid black 3px;
+	border-radius: 5px;
+	background:grey;
+	width:70%;
+	margin-bottom:20px;
+	font-size: 1.05em;
+	min-height: 780px;
+}
+
+#TitreInter{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#TPresse{
+	width: 70%;
+	margin: 3% auto 3% auto;
+	text-align: center;
+	padding: 5px;
+}
